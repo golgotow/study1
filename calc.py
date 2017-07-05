@@ -27,7 +27,7 @@ class app(Frame):
             for ichar in clearBut:
                 button(erase, LEFT, ichar, lambda storeObj=display, q=ichar: storeObj.set(''))
 
-        for Numbut in("789/", "456*", "123-", "0.+="):
+        for Numbut in("789/", "456*", "123-", "0.+"):
             FunctionNum = iCalc(self, TOP)
             for char in Numbut:
                 button(FunctionNum, LEFT, char, lambda storeObj=display, q=char: storeObj.set(storeObj.get()+q))
