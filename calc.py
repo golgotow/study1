@@ -32,6 +32,16 @@ class app(Frame):
             for char in Numbut:
                 button(FunctionNum, LEFT, char, lambda storeObj=display, q=char: storeObj.set(storeObj.get()+q))
 
+        EqulasButton = iCalc(self, TOP)
+        for iEquals in "=":
+            if iEquals == '=':
+                btniEquals = button(EqulasButton, LEFT, iEquals)
+                btniEquals.bind('<ButtonRelease-1>',
+                                lambda e, s=self, storeObj=display: s.calc(storeObj), '+')
+            else:
+                btniEquals = button(EqulasButton, LEFT, iEquals,
+                                    lambda storeObj=display, s=' %s'%iEquals: storeObj.set(storeObj.get()+s))
+
 
 
 if __name__ == '__main__':
