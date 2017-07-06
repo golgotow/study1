@@ -78,7 +78,7 @@ wiadomosc(a)
 
 # usuń wycinek
 
-print("Twoje", invertory[:2], "zostały skradzione")
+print("Twoje", invertory[:2] , "zostały skradzione")
 del invertory[:2]
 print("Twój aktualny ekwipunek to ")
 print(invertory)
