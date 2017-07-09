@@ -86,7 +86,7 @@ print(invertory)
 
 wiadomosc(a)
 
-wiadomosc(a)
+
 
 
 
