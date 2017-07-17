@@ -3,17 +3,25 @@ import sys
 from sys import argv
 import os
 
-def menu(menus):
-    if menus == "battery":
+def batt(batt):
+    if batt == "battery":
         os.system("/home/cron/battery.sh")
         exit
+
+def menu(menus):
+    if menus == "battery":
+        #os.system("/home/cron/battery.sh")
+        #exit
+        batt(menus)
     elif menus == "costam":
         print("wybrales 2")
         exit
     elif menus == "help":
         print("menu.py battery")
+        exit
     elif menus == "?":
         print("menu.py battery")
+        exit
 
 
 

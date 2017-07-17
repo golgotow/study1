@@ -30,11 +30,9 @@
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="14" selection-end-column="22" />
-              <folding>
-                <element signature="e#19#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -543,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1500295030338</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="17.7.2017">
+      <created>1500295224432</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1500295224432</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1035,11 +1040,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#19#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
