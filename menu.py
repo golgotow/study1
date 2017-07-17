@@ -4,10 +4,10 @@ from sys import argv
 import os
 
 def menu(menus):
-    if menus == 1:
+    if menus == "battery":
         os.system("/home/cron/battery.sh")
         exit
-    elif menus == 2:
+    elif menus == "costam":
         print("wybrales 2")
         exit
     elif menus == "help":
