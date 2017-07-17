@@ -12,12 +12,14 @@ def menu(menus):
         exit
     elif menus == "help":
         print("menu.py battery")
+    elif menus == "?":
+        print("menu.py battery")
 
 
 
 
 
-print ("Standard Menu for basic Operations in python3")
+print ("Standard Menu for basic Operations in python3 using bash scripts and others")
 print ("Version 0.01 alfa, By Sobota Przemysław (17.07..2017)")
 if len(sys.argv) > 1:
         print(sys.argv[1])
