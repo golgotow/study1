@@ -14,8 +14,6 @@ def show(wysw):
 
 def menu(menus):
     if menus == "battery":
-        #os.system("/home/cron/battery.sh")
-        #exit
         batt(menus)
     elif menus == "rules":
         os.system("ip rule")
@@ -35,7 +33,7 @@ def menu(menus):
 print ("Standard Menu for basic Operations in python3 using bash scripts and others")
 print ("Version 0.01 alfa, By Sobota Przemysław (17.07..2017)")
 if len(sys.argv) > 1:
-        print(sys.argv[1])
+    #    print(sys.argv[1])
         a = sys.argv[1]
         menu(a)
 else:
