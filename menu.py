@@ -18,10 +18,11 @@ def batt(batt):
         exit
 
 def show(wysw):
-    print("menu.py battery")
-    print("rules #network rules")
-    print("puppet")
-    print("docker")
+    print("")
+    print("menu.py battery\n")
+    print("rules #network rules\n")
+    print("puppet\n")
+    print("docker\n")
     exit
 
 def menu(menus):
@@ -32,9 +33,6 @@ def menu(menus):
         exit
     elif menus == "puppet":
         os.system(first1)
-    #elif menus == "docker":
-    #    os.system("docker "+ sys.argv[2])
-    #    exit
     elif menus == "docker":
         if len(sys.argv) > 2:
 	        os.system("docker "+ sys.argv[2])
@@ -49,9 +47,9 @@ def menu(menus):
         exit
 
 
-
-print ("Standard Menu for basic Operations in python3 using bash scripts and others")
-print ("Version 0.01 alfa, By Sobota Przemysław (17.07.2017)")
+print("")
+print("Standard Menu for basic Operations in python3 using bash scripts and others")
+print("Version 0.10 alfa, By Sobota Przemysław (18.07.2017)")
 
 if len(sys.argv) > 1:
         a = sys.argv[1]
@@ -59,6 +57,7 @@ if len(sys.argv) > 1:
 else:
         print("no argv, please use help")
         exit
+
 
 
 
