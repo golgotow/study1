@@ -32,6 +32,15 @@ def menu(menus):
         exit
     elif menus == "puppet":
         os.system(first1)
+    #elif menus == "docker":
+    #    os.system("docker "+ sys.argv[2])
+    #    exit
+    elif menus == "docker":
+        if len(sys.argv) > 2:
+	        os.system("docker "+ sys.argv[2])
+        else:
+        	print("brak argumentow")
+        	exit
     elif menus == "help":
         show(blankvariable)
         exit
@@ -42,7 +51,7 @@ def menu(menus):
 
 
 print ("Standard Menu for basic Operations in python3 using bash scripts and others")
-print ("Version 0.02 alfa, By Sobota Przemysław (18.07.2017)")
+print ("Version 0.01 alfa, By Sobota Przemysław (17.07.2017)")
 
 if len(sys.argv) > 1:
         a = sys.argv[1]
@@ -54,36 +63,3 @@ else:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#!/usr/bin/python3
-#import sys
-#from sys import argv
-#import os
-#print ("Standard Menu for basic Operations in python3")
-#print ("Version 0.01 alfa, By Sobota Przemysław (17.07..2017)")
-#print (argv[1])
-#if len(sys.argv) > 1:
-#        a = argv[1]
-#        print(argv[1])
-#else:
-#        print("no argv")
-#        exit
-
-
-#print ("argv[0]")
-
-#if a == "":
-#        print("nothing paste, existing")
-#        exit
