@@ -10,6 +10,8 @@ def batt(batt):
 def show(wysw):
     print("menu.py battery")
     print("rules #network rules")
+    print("puppet")
+    print("salt")
     exit
 
 def menu(menus):
@@ -17,6 +19,9 @@ def menu(menus):
         batt(menus)
     elif menus == "rules":
         os.system("ip rule")
+        exit
+    elif menus == "salt":
+        os.system("ssh root@`docker inspect puppet|grep IPAddress|grep 192.168.17|head -1| awk {'print $2'}|sed 's/"//g'| sed 's/,//g'`")
         exit
     elif menus == "help":
         show(blankvariable)
