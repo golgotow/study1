@@ -42,7 +42,7 @@ def menu(menus):
 
 
 print ("Standard Menu for basic Operations in python3 using bash scripts and others")
-print ("Version 0.01 alfa, By Sobota Przemysław (17.07.2017)")
+print ("Version 0.02 alfa, By Sobota Przemysław (18.07.2017)")
 
 if len(sys.argv) > 1:
         a = sys.argv[1]
