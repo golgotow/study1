@@ -8,7 +8,7 @@ second = "grep 192.168.17|head -1| "
 third = " awk {'print $2'}|sed "
 four = "'s/"+"//g"
 five = "'| sed 's/,//g'`"
-docker = first+second+third+four+five
+docker = str(first+second+third+four+five)
 def batt(batt):
     if batt == "battery":
         os.system("/home/cron/battery.sh")
@@ -27,7 +27,7 @@ def menu(menus):
         os.system("ip rule")
         exit
     elif menus == "salt":
-        docker
+        os.system(docker)
         exit
     elif menus == "help":
         show(blankvariable)
