@@ -6,7 +6,7 @@ blankvariable = ""
 first = "ssh root@`docker inspect puppet|"
 second = "grep 192.168.17|head -1| "
 third = " awk {'print $2'}|sed "
-four = "'s/"+"//g"
+four = "'s/"+'"//g'
 five = "'| sed 's/,//g'`"
 docker = str(first+second+third+four+five)
 def batt(batt):
@@ -26,7 +26,7 @@ def menu(menus):
     elif menus == "rules":
         os.system("ip rule")
         exit
-    elif menus == "salt":
+    elif menus == "docker":
         os.system(docker)
         exit
     elif menus == "help":
