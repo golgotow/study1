@@ -2,7 +2,7 @@
 import sys
 from sys import argv
 import os
-czesc = ""
+blankvariable = ""
 def batt(batt):
     if batt == "battery":
         os.system("/home/cron/battery.sh")
@@ -25,7 +25,7 @@ def menu(menus):
         print("rules")
         exit
     elif menus == "?":
-        show(czesc)
+        show(blankvariable)
         exit
 
 
