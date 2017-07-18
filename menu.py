@@ -19,8 +19,7 @@ def menu(menus):
         os.system("ip rule")
         exit
     elif menus == "help":
-        print("menu.py battery")
-        print("rules")
+        show(blankvariable)
         exit
     elif menus == "?":
         show(blankvariable)
@@ -31,7 +30,7 @@ def menu(menus):
 
 
 print ("Standard Menu for basic Operations in python3 using bash scripts and others")
-print ("Version 0.01 alfa, By Sobota Przemysław (17.07..2017)")
+print ("Version 0.01 alfa, By Sobota Przemysław (17.07.2017)")
 if len(sys.argv) > 1:
     #    print(sys.argv[1])
         a = sys.argv[1]
