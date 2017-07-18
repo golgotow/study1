@@ -3,6 +3,12 @@ import sys
 from sys import argv
 import os
 blankvariable = ""
+first = "ssh root@`docker inspect puppet|"
+second = "grep 192.168.17|head -1| "
+third = " awk {'print $2'}|sed "
+four = "'s/"+"//g"
+five = "'| sed 's/,//g'`"
+docker = first+second+third+four+five
 def batt(batt):
     if batt == "battery":
         os.system("/home/cron/battery.sh")
@@ -21,7 +27,7 @@ def menu(menus):
         os.system("ip rule")
         exit
     elif menus == "salt":
-        os.system("ssh root@`docker inspect puppet|grep IPAddress|grep 192.168.17|head -1| awk {'print $2'}|sed 's/"//g'| sed 's/,//g'`")
+        docker
         exit
     elif menus == "help":
         show(blankvariable)
