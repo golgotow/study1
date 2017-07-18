@@ -2,25 +2,30 @@
 import sys
 from sys import argv
 import os
-
+czesc = ""
 def batt(batt):
     if batt == "battery":
         os.system("/home/cron/battery.sh")
         exit
+def show(wysw):
+    print("menu.py battery")
+    print("rules #network rules")
+    exit
 
 def menu(menus):
     if menus == "battery":
         #os.system("/home/cron/battery.sh")
         #exit
         batt(menus)
-    elif menus == "costam":
-        print("wybrales 2")
+    elif menus == "rules":
+        os.system("ip rule")
         exit
     elif menus == "help":
         print("menu.py battery")
+        print("rules")
         exit
     elif menus == "?":
-        print("menu.py battery")
+        show(czesc)
         exit
 
 
