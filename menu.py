@@ -4,6 +4,7 @@ from sys import argv
 import os
 blankvariable = ""
 first1 = "ssh root@`docker inspect puppet|" + "grep 192.168.17|grep IPAddress|head -1|" + " awk {'print $2'}|sed " + "'s/"+'"//g' + "'| sed 's/,//g'`"
+second1 = "ssh root@`docker inspect salt|" + "grep 192.168.17|grep IPAddress|head -1|" + " awk {'print $2'}|sed " + "'s/"+'"//g' + "'| sed 's/,//g'`"
 #first = "ssh root@`docker inspect puppet|"
 #second = "grep 192.168.17|head -1| "
 #third = " awk {'print $2'}|sed "
@@ -22,7 +23,10 @@ def show(wysw):
     print("menu.py battery\n")
     print("rules #network rules\n")
     print("puppet\n")
+    print("salt\n")
+    print("ssh_server\n")
     print("docker\n")
+    print("enter repo Direcotry put menu repo\n")
     exit
 
 def menu(menus):
@@ -33,6 +37,14 @@ def menu(menus):
         exit
     elif menus == "puppet":
         os.system(first1)
+    elif menus == "salt":
+        os.system(second1)
+    elif menus == "ssh_server":
+        os.system("ssh root@192.168.17.18")
+    elif menus == "repo":
+        os.chdir("/backup/repo/pve/ks/")
+        os.system("pwd")
+        print("wybrano repo")
     elif menus == "docker":
         if len(sys.argv) > 2:
 	        os.system("docker "+ sys.argv[2])
@@ -57,7 +69,6 @@ if len(sys.argv) > 1:
 else:
         print("no argv, please use help")
         exit
-
 
 
 
