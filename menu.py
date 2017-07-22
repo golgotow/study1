@@ -26,6 +26,7 @@ def show(wysw):
     print("salt\n")
     print("ssh_server\n")
     print("docker\n")
+    print("firewall edit/restart")
     print("enter repo Direcotry put menu repo\n")
     exit
 
@@ -51,6 +52,14 @@ def menu(menus):
         else:
         	print("brak argumentow")
         	exit
+    elif menus == "firewall":
+        if len(sys.argv) > 2:
+            if sys.argv[2] == "edit":
+                os.system("vim /root/maskarada")
+            elif sys.argv[2] == "restart":
+                os.system("/root/maskarada")
+        else:
+            print("brak argumentow")
     elif menus == "help":
         show(blankvariable)
         exit
@@ -69,7 +78,3 @@ if len(sys.argv) > 1:
 else:
         print("no argv, please use help")
         exit
-
-
-
-
