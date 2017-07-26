@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40996251-731f-411f-9176-9951760b704b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/links" afterPath="$PROJECT_DIR$/links" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="links" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/links">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="22" column="95" lean-forward="true" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -654,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1500805528690</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="25.07.2017">
+      <created>1501064601292</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1501064601292</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -705,7 +711,8 @@
     <MESSAGE value="11.7.2017" />
     <MESSAGE value="17.7.2017" />
     <MESSAGE value="18.07.2017 - work" />
-    <option name="LAST_COMMIT_MESSAGE" value="18.07.2017 - work" />
+    <MESSAGE value="25.07.2017" />
+    <option name="LAST_COMMIT_MESSAGE" value="25.07.2017" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1150,8 +1157,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/links">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="22" column="95" lean-forward="true" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
           <folding />
         </state>
       </provider>
