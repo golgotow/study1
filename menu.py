@@ -5,12 +5,6 @@ import os
 blankvariable = ""
 first1 = "ssh root@`docker inspect puppet|" + "grep 192.168.17|grep IPAddress|head -1|" + " awk {'print $2'}|sed " + "'s/"+'"//g' + "'| sed 's/,//g'`"
 second1 = "ssh root@`docker inspect salt|" + "grep 192.168.17|grep IPAddress|head -1|" + " awk {'print $2'}|sed " + "'s/"+'"//g' + "'| sed 's/,//g'`"
-#first = "ssh root@`docker inspect puppet|"
-#second = "grep 192.168.17|head -1| "
-#third = " awk {'print $2'}|sed "
-#four = "'s/"+'"//g'
-#five = "'| sed 's/,//g'`"
-#puppett = str(first+second+third+four+five)
 puppett = str(first1)
 
 def batt(batt):
@@ -26,8 +20,12 @@ def show(wysw):
     print("salt\n")
     print("ssh_server\n")
     print("docker\n")
-    print("firewall edit/restart")
+    print("firewall edit/restart\n")
     print("enter repo Direcotry put menu repo\n")
+    print("ilo2\n")
+    print("ipmi\n")
+    print("jump edit\n")
+    print("qnap\n")
     exit
 
 def menu(menus):
@@ -42,6 +40,14 @@ def menu(menus):
         os.system(second1)
     elif menus == "ssh_server":
         os.system("ssh root@192.168.17.18")
+    elif menus == "ilo2":
+        os.system("telnet 192.168.13.238")
+    elif menus == "ipmi":
+        os.system("ipmitool -I lan -H 192.168.1.238 -U root shell")
+    elif menus == "jump":
+        os.system("ssh jump@jump")
+    elif menus == "qnap":
+        os.system("ssh admin@qnap")
     elif menus == "repo":
         os.chdir("/backup/repo/pve/ks/")
         os.system("pwd")
@@ -70,7 +76,7 @@ def menu(menus):
 
 print("")
 print("Standard Menu for basic Operations in python3 using bash scripts and others")
-print("Version 0.10 alfa, By Sobota Przemysław (18.07.2017)")
+print("Version 0.15 alfa, By Sobota Przemysław (20.07.2017)")
 
 if len(sys.argv) > 1:
         a = sys.argv[1]
